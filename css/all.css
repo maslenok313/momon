@@ -1,3 +1,370 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 53px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 117px;
+
+}
+
+.header__logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #202020;
+    transition: all .3s;
+}
+
+.header__logo a:hover{
+    color: #5528ff;
+    font-size: 32px;
+    padding: 5px 10px;
+}
+
+span{
+    margin-right: 25px;
+}
+
+.nav{
+    justify-content: flex-start;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #202020;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-right: 37px;
+    transition: all .3s;
+}
+
+.nav a:hover{
+    padding: 3px 14px 5px;
+    border: 1px solid #202020;
+}
+
+.nav .header__btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    padding: 3px 14px 5px;
+    background-color: #5528ff;
+    border-radius: 5px;
+    border-style: none;
+    transition: all .5s;
+}
+
+.nav .header__btn:hover{
+    opacity: .7;
+}
+
+
+
+
+
+
+
+.description{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.description__title{
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 700;
+    color: #202020;
+    margin-bottom: 35px;
+}
+
+.description__text{
+    max-width: 741px;
+    font-size: 32px;
+    line-height: 51px;
+    font-weight: 400;
+    color: #4f4f4f;
+    margin-bottom: 70px;
+}
+
+.description__btn{
+    border-style: none;
+    margin-bottom: 101px;
+
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    padding: 15px 58px;
+    background-color: #5528ff;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.description__btn:hover{
+    opacity: .7;
+}
+
+
+
+
+
+
+
+
+.services,
+.clients,
+.team{
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.our__services,
+.our__clients,
+.our__team{
+    border-top: 1px solid #c2c2c2;
+    margin-bottom: 100px;
+    position: relative;
+
+}
+
+.our__services__text,
+.our__clients__text,
+.our__team__text{
+    color: #c2c2c2;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: -110px;
+    padding: 0 15px 0 15px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.services__inner{
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    margin-bottom: 20px;
+
+
+}
+
+.services__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 450px;
+    margin-bottom: 80px;
+}
+
+.services__img{
+    flex-basis: 100px;
+    text-align: center;
+    margin-right: 50px;
+
+
+
+}
+
+.services__items{
+    flex-basis: calc(100% - 100px);
+}
+
+.services__title{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 17px;
+}
+
+.services__text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #b2b2b2;
+}
+
+
+
+
+
+
+
+
+.clients__inner{
+    display: grid;
+    grid-template-columns: 100% 100% 100% 100%;
+    grid-template-rows: 70% 70% 70%;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 210px;
+}
+
+.clients__item{
+
+}
+
+
+
+
+
+img.avatar{
+    border-radius: 50%;
+}
+
+.team__inner{
+    display: grid;
+    grid-template: 50% 50% 50% / 35% 35% 35%;
+    width: 100%;
+    margin-bottom: 220px;
+
+
+}
+
+.team__img{
+    margin-right: 35px;
+    align-items: center;
+}
+
+.team__items{
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.team__name{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 11px;
+    color: #202020;
+}
+
+.team__text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #b2b2b2;
+}
+
+.footer__inner{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+.footer{
+
+    background-color: #f7f7f7;
+}
+
+.footer__logo{
+    transition: all .3s;
+}
+
+.footer__logo:hover{
+    color: #5528ff;
+    font-size: 32px;
+    padding: 8px 15px;
+}
+
+.footer__inner{
+     width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social ul{
+    display: flex;
+    color: #b2b2b2;
+
+}
+
+.footer__social li{
+    list-style: none;
+    margin-right: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+
+
+}
+.footer a {
+    color: #b2b2b2;
+    transition: all .3s;
+}
+
+.footer a:hover{
+    color: #2f2f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
